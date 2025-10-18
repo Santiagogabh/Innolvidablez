@@ -1,0 +1,38 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nombre del perfume"
+    },
+    "price": {
+      "type": "number",
+      "description": "Precio del perfume"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL de la imagen del perfume"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descripción del perfume"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "femenino",
+        "masculino",
+        "unisex"
+      ],
+      "description": "Categoría del perfume"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Si es un producto destacado"
+    }
+}
+
+}
+ 
